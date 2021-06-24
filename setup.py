@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+import os
+os.system('sudo apt install python3-pip')
+os.system('mkdir tools')
+os.system('cd tools && git clone https://github.com/sherlock-project/sherlock.git')
+os.system('cd tools/sherlock && python3 -m pip install -r requirements.txt')
+os.system('cd tools && git clone https://github.com/laramies/theHarvester')
+os.system('cd tools/theHarvester && python3 -m pip install -r requirements/base.txt')
+os.system('pip3 install shodan')
+os.system('cd tools && gh repo clone lanmaster53/recon-ng')
+os.system('cd tools/recon-ng && python3 -m pip install -r REQUIREMENTS')
+os.system('chmod +x tools/recon-ng/recon-web && chmod +x tools/recon-ng/recon-ng && chmod +x tools/recon-ng/recon-cli')
+os.system('pip3 install twint')
+os.system('cd tools && wget https://github.com/smicallef/spiderfoot/archive/v3.3.tar.gz && tar zxvf v3.3.tar.gz')
+os.system('cd tools/spiderfoot-3.3 && pip3 install -r requirements.txt')
+os.system('pip3 install instagram-scraper')
